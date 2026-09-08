@@ -14,7 +14,7 @@ def run(path, shader_path, dump, replace):
     missing = 0
     for path in Path(sys.argv[1]).glob('**/*'):
         file = str(path)
-        if os.path.basename(file) not in ["unity_builtin_extra", "globalgamemanagers.assets", "resources.assets"]:
+        if os.path.basename(file) not in ["unity_builtin_extra", "globalgamemanagers.assets", "resources.assets"] and not os.path.basename(file).endswith(".assets"):
             continue
         print(file)
         env = UnityPy.load(file)
