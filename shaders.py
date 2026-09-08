@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 
 
-platform_apis = {4: "DirectX", 5: "OpenGLES 2", 9: "OpenGLES 3", 14: "Metal", 15: "OpenGL Core", 18: "Vulkan"}
+platform_apis = {1: "DirectX 9", 4: "DirectX 11", 5: "OpenGLES 2", 9: "OpenGLES 3", 14: "Metal", 15: "OpenGL Core", 18: "Vulkan"}
 
 def run(path, shader_path, dump, replace):
     missing = 0

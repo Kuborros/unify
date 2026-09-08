@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 
 
-graphics_apis = {2: "DirectX 11", 8: "OpenGLES 2", 11: "OpenGLES 3", 16: "Metal", 17: "OpenGL Core", 18: "DirectX 12", 21: "Vulkan"}
+graphics_apis = {1: "DirectX 9", 2: "DirectX 11", 8: "OpenGLES 2", 11: "OpenGLES 3", 16: "Metal", 17: "OpenGL Core", 18: "DirectX 12", 21: "Vulkan"}
 
 def run(path, force):
     for path in Path(sys.argv[1]).glob('**/globalgamemanagers'):
