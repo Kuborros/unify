@@ -233,6 +233,7 @@ Even if there is a way to directly translate shader byte-code to another graphic
 | Against All Odds                  | ad8aff099d2a445599f9797a24e9ff93 | 2021.3.19f1   | no              | no             | no       |                                               |
 | **The Last Campfire**             | 990630                           | 2018.4.24f1   | **no**          | yes            | **yes**  | Needs an arbitrary `.so` file named as `Data/Mono/x86_64/libsteam_api64.so`. Controller input doesn't work (may require patching the Rewired library) |
 | Pokémon Trading Card Game Live    | pokemon                          | 2022.3.21f1   | no              | no             | no       |                                               |
+| Freedom Planet 2                  | pokemon                          | 5.6.3f1       | no              | no             | **yes**  | Needs ``FP2_Data/Plugins/x86_64/libCSteamworks.so + libsteam_api.so``. These can be obtained from ``Steamworks.NET-Standalone_2025.164.1.zip`` package from Steamworks.Net releases. For controller support ``Assembly-CSharp.dll`` needs to be patched[^2] replacing ``Rewired.InputManager.platform`` to ``linux``|
 
 [^1]: The file `libEOSSDK-Linux-Shipping.so` can be taken from the EOS-SDK and renamed to replace the missing library.
 [^2]: The file can be patched to use `Rewired_Linux.dll` instead of `Rewired_OSX.dll` with [dnSpy](https://github.com/dnSpy/dnSpy). `Rewired_Linux.dll` can be taken from the macOS version of Totally Reliable Delivery Service.
